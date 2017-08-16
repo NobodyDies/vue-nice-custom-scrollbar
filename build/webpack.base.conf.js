@@ -9,10 +9,11 @@ function resolve (dir) {
 
 module.exports = {
   entry: {
-    app: './src/main.js'
+    'demo/vue-nice-custom-scrollbar': './src/demo.js',
+    'dist/vue-nice-custom-scrollbar': './src/index.js'
   },
   output: {
-    path: config.build.assetsRoot,
+    path: path.resolve(config.build.assetsRoot, '..'),
     filename: '[name].js',
     publicPath: process.env.NODE_ENV === 'production'
       ? config.build.assetsPublicPath
