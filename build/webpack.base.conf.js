@@ -9,7 +9,7 @@ function resolve (dir) {
 
 module.exports = {
   entry: {
-    'demo/vue-nice-custom-scrollbar': './src/demo.js',
+    'demo/index': './src/demo.js',
     'dist/vue-nice-custom-scrollbar': './src/index.js'
   },
   output: {
